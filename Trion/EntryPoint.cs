@@ -24,7 +24,7 @@ namespace Trion
             Interface.GameEventManager.Hook(9, Hooks.FireEventClientSideDelegate);
             Interface.BaseClientDLL.Hook(37, Hooks.FrameStageNotifyDelegate);
             Interface.NetVar.HookProp("DT_BaseViewModel", "m_nSequence", Hooks.SetViewModelSequenceDelegate, ref Interface.NetVar.SequencePtr);
-            Interface.GameUI.MessageBox("HI", Api.Authorization().IsHwid.ToString());
+            Interface.GameUI.MessageBox("HUI", Api.Authorization().IsHwid.ToString());
             return 0;
         }
     }
